@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main"
+    android:background="@drawable/home1">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to SEACET"
+            android:textColor="#000"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.072"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.07" />
+
+        <Button
+            android:id="@+id/buttonAttendance"
+            android:layout_width="320dp"
+            android:layout_height="43dp"
+            android:background="@drawable/custom_button"
+            android:textColor="#FFFFFF"
+            android:text="Attendance"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="23dp"
+            />
+
+        <Button
+            android:id="@+id/buttonExternalTimeTable"
+            android:layout_width="320dp"
+            android:layout_height="43dp"
+            android:background="@drawable/custom_button_external_tt"
+            android:textColor="#fff"
+            android:text="External time table"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="23dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.761"
+            android:layout_gravity="start" />
+        <View
+            android:id="@+id/divider"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="#E0DCDC"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"/>
+
+        <Button
+            android:id="@+id/buttonSyllabus"
+            android:layout_width="320dp"
+            android:layout_height="43dp"
+            android:background="@drawable/custom_button_syllabus"
+            android:textColor="#fff"
+            android:text="syllabus"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="23dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.761"
+            android:layout_gravity="start" />
+        <Button
+            android:id="@+id/buttonNotes"
+            android:layout_width="320dp"
+            android:layout_height="43dp"
+            android:background="@drawable/custom_button_notes"
+            android:textColor="#fff"
+            android:text="notes | Question papers | Textbook pdf"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="23dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.761"
+            android:layout_gravity="start" />
+        <Button
+            android:id="@+id/buttonResult"
+            android:layout_width="320dp"
+            android:layout_height="43dp"
+            android:background="@drawable/custom_button_results"
+            android:textColor="#fff"
+            android:text="results"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="23dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.761"
+            android:layout_gravity="start" />
+
+        <View
+            android:id="@+id/divider1"
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="#E0DCDC"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="6dp"/>
+
+        <Button
+            android:id="@+id/buttonAptitudeQuiz"
+            android:layout_width="320dp"
+            android:layout_height="43dp"
+            android:layout_gravity="start"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custom_button1"
+            android:text="Aptitude Quiz"
+            android:textColor="#fff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.469"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.317" />
+        <Button
+            android:id="@+id/buttonDictionary"
+            android:layout_width="320dp"
+            android:layout_height="43dp"
+            android:background="@drawable/custom_button4"
+            android:textColor="#fff"
+            android:text="Dictionary"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="23dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.505"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.650"
+            android:layout_gravity="start" />
+
+        <Button
+            android:id="@+id/buttonSgpa_to_Cgpa"
+            android:layout_width="320dp"
+            android:layout_height="43dp"
+            android:background="@drawable/custom_button3"
+            android:textColor="#fff"
+            android:text="sgpa to cgpa"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="23dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.493"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.539"
+            android:layout_gravity="start" />
+
+        <Button
+            android:id="@+id/buttonSticky_note"
+            android:layout_width="320dp"
+            android:layout_height="43dp"
+            android:background="@drawable/custom_button5"
+            android:textColor="#fff"
+            android:text="Sticky note"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="23dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.517"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.761"
+            android:layout_gravity="start" />
+    </LinearLayout>
+
+
+</ScrollView>

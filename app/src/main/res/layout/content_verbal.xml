@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Aptitude.verbal"
+    tools:showIn="@layout/app_bar_verbal">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/Verbal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#C0CA33"
+            android:text="VERBAL REASONING "
+            android:textAlignment="center"
+            android:textColor="#FFEDEDF5"
+            android:textSize="25sp"
+            android:padding="6dp" />
+
+        <Button
+            android:id="@+id/btnAntonyms"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:text="ANTONYMS"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_antonyms"
+            android:textColor="#FB8C00"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+
+        <Button
+            android:id="@+id/btnVoice"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_voice"
+            android:gravity="center_vertical"
+            android:text="CHANGE OF VOICE"
+            android:textColor="#FB8C00"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnSynonyms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_synonyms"
+            android:gravity="center_vertical"
+            android:text="SYNONYMS"
+            android:textColor="#FB8C00"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnIdioms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_idoms"
+            android:gravity="center_vertical"
+            android:text="IDIOMS AND PHRASE"
+            android:textColor="#FB8C00"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnSpotting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_errors"
+            android:gravity="center_vertical"
+            android:text="SPOTTING ERRORS"
+            android:textColor="#FB8C00"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnOrdering"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_ordering"
+            android:gravity="center_vertical"
+            android:text="ORDERING OF WORDS"
+            android:textColor="#FB8C00"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnSelecting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_selecting"
+            android:gravity="center_vertical"
+            android:text="SELECTING WORDS"
+            android:textColor="#FB8C00"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnSentence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_sentence"
+            android:gravity="center_vertical"
+            android:text="SENTENCE ORDERING"
+            android:textColor="#FB8C00"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnSpellings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_alphabet"
+            android:gravity="center_vertical"
+            android:text="SPELLINGS"
+            android:textColor="#FB8C00"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnVeranalogy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_boy"
+            android:gravity="center_vertical"
+            android:text="VERBAL ANALOGIES"
+            android:textColor="#FB8C00"
+            android:textSize="20sp" />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+

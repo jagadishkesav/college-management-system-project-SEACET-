@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.college">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="College_app"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".AboutOurCollegeMain"></activity>
+        <activity android:name=".FeedbackMain" />
+        <activity android:name=".PasswordActivity" />
+        <activity android:name=".Attendance.AttendanceMainActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Notification" />
+        <activity android:name=".Scan" />
+        <activity android:name=".NoteView.CSESem8" />
+        <activity android:name=".NoteView.CSESem7" />
+        <activity android:name=".NoteView.CSESem6" />
+        <activity android:name=".NoteView.CSESem5" />
+        <activity android:name=".NoteView.CSESem4" />
+        <activity android:name=".NoteView.CSESem3" />
+        <activity android:name=".NoteView.CSESem2" />
+        <activity android:name=".NoteView.CSESemView8" />
+        <activity android:name=".NoteView.CSESemView7" />
+        <activity android:name=".NoteView.CSESemView6" />
+        <activity android:name=".NoteView.CSESemView5" />
+        <activity android:name=".NoteView.CSESemView4" />
+        <activity android:name=".NoteView.CSESemView3" />
+        <activity android:name=".NoteView.CSESemView2" />
+        <activity android:name=".NoteView.NoteView" />
+        <activity android:name=".NoteView.CSESemView1" />
+        <activity android:name=".NoteView.CSESem1" />
+        <activity android:name=".NoteView.CSEMain" />
+        <activity android:name=".Notes.CIV.View_civ_sem8" />
+        <activity android:name=".Notes.CIV.View_civ_sem7" />
+        <activity android:name=".Notes.CIV.View_civ_sem6" />
+        <activity android:name=".Notes.CIV.View_civ_sem5" />
+        <activity android:name=".Notes.CIV.View_civ_sem4" />
+        <activity android:name=".Notes.CIV.View_civ_sem3" />
+        <activity android:name=".Notes.CIV.View_civ_sem2" />
+        <activity android:name=".Notes.CIV.View_civ_sem1" />
+        <activity android:name=".Notes.CIV.civ_sem8" />
+        <activity android:name=".Notes.CIV.civ_sem7" />
+        <activity android:name=".Notes.CIV.civ_sem6" />
+        <activity android:name=".Notes.CIV.civ_sem5" />
+        <activity android:name=".Notes.CIV.civ_sem4" />
+        <activity android:name=".Notes.CIV.civ_sem3" />
+        <activity android:name=".Notes.CIV.civ_sem2" />
+        <activity android:name=".Notes.CIV.civ_sem1" />
+        <activity android:name=".Notes.MECH.View_mech_sem8" />
+        <activity android:name=".Notes.MECH.View_mech_sem7" />
+        <activity android:name=".Notes.MECH.View_mech_sem6" />
+        <activity android:name=".Notes.MECH.View_mech_sem5" />
+        <activity android:name=".Notes.MECH.View_mech_sem4" />
+        <activity android:name=".Notes.MECH.View_mech_sem3" />
+        <activity android:name=".Notes.MECH.View_mech_sem2" />
+        <activity android:name=".Notes.MECH.View_mech_sem1" />
+        <activity android:name=".Notes.MECH.mech_sem8" />
+        <activity android:name=".Notes.MECH.mech_sem7" />
+        <activity android:name=".Notes.MECH.mech_sem6" />
+        <activity android:name=".Notes.MECH.mech_sem5" />
+        <activity android:name=".Notes.MECH.mech_sem4" />
+        <activity android:name=".Notes.MECH.mech_sem3" />
+        <activity android:name=".Notes.MECH.mech_sem2" />
+        <activity android:name=".Notes.MECH.mech_sem1" />
+        <activity android:name=".Notes.ECE.View_ece_sem8" />
+        <activity android:name=".Notes.ECE.View_ece_sem7" />
+        <activity android:name=".Notes.ECE.View_ece_sem6" />
+        <activity android:name=".Notes.ECE.View_ece_sem5" />
+        <activity android:name=".Notes.ECE.View_ece_sem4" />
+        <activity android:name=".Notes.ECE.View_ece_sem3" />
+        <activity android:name=".Notes.ECE.View_ece_sem2" />
+        <activity android:name=".Notes.ECE.View_ece_sem1" />
+        <activity android:name=".Notes.ECE.ece_sem8" />
+        <activity android:name=".Notes.ECE.ece_sem7" />
+        <activity android:name=".Notes.ECE.ece_sem6" />
+        <activity android:name=".Notes.ECE.ece_sem5" />
+        <activity android:name=".Notes.ECE.ece_sem4" />
+        <activity android:name=".Notes.ECE.ece_sem3" />
+        <activity android:name=".Notes.ECE.ece_sem2" />
+        <activity android:name=".Notes.ECE.ece_sem1" />
+        <activity android:name=".Notes.ISE.ViewIse8" />
+        <activity android:name=".Notes.ISE.ViewIse7" />
+        <activity android:name=".Notes.ISE.ViewIse6" />
+        <activity android:name=".Notes.ISE.ViewIse5" />
+        <activity android:name=".Notes.ISE.ViewIse4" />
+        <activity android:name=".Notes.ISE.ViewIse3" />
+        <activity android:name=".Notes.ISE.ViewIse2" />
+        <activity android:name=".Notes.ISE.ViewIse1" />
+        <activity android:name=".Notes.ISE.sem8" />
+        <activity android:name=".Notes.ISE.sem7" />
+        <activity android:name=".Notes.ISE.sem6" />
+        <activity android:name=".Notes.ISE.sem5" />
+        <activity android:name=".Notes.ISE.sem4" />
+        <activity android:name=".Notes.ISE.sem3" />
+        <activity android:name=".Notes.ISE.sem2" />
+        <activity android:name=".Notes.ISE.sem1" />
+        <activity android:name=".Notes.CIV.CIV" />
+        <activity android:name=".Notes.MECH.MECH" />
+        <activity android:name=".Notes.ECE.ECE" />
+        <activity android:name=".Notes.ISE.ISE" />
+        <activity android:name=".Notes.ViewSem1Pdf" />
+        <activity android:name=".Notes.ViewSem2Pdf" />
+        <activity android:name=".Notes.ViewSem3Pdf" />
+        <activity android:name=".Notes.ViewSem4Pdf" />
+        <activity android:name=".Notes.ViewSem5Pdf" />
+        <activity android:name=".Notes.ViewSem6Pdf" />
+        <activity android:name=".Notes.ViewSem7Pdf" />
+        <activity android:name=".Notes.ViewSem8Pdf" />
+        <activity android:name=".Notes.semester8" />
+        <activity android:name=".Notes.semester7" />
+        <activity android:name=".Notes.semester6" />
+        <activity android:name=".Notes.semester5" />
+        <activity android:name=".Notes.semester4" />
+        <activity android:name=".Notes.semester3" />
+        <activity android:name=".Notes.semester2" />
+        <activity android:name=".Notes.semester1" />
+        <activity android:name=".Notes.semester" />
+        <activity android:name=".Notes.note" />
+        <activity android:name=".Notes.ViewUploadsActivity" />
+        <activity
+            android:name=".StickyNotes.StickyNotesMain"
+            android:label="@string/title_activity_sticky_notes_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StickyNotes.EditNoteActivity"
+            android:parentActivityName=".StickyNotes.StickyNotesMain" />
+        <activity
+            android:name=".Notes.PdfMainActivity"
+            android:label="@string/title_activity_pdf_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".WelcomeActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".webview"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Dictionary.DictionaryMainActivity"
+            android:label="@string/title_activity_dictionary_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".sgpaandcgpa"
+            android:label="@string/title_activity_sgpaandcgpa"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".External_tt"
+            android:label="@string/title_activity_external_tt"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Aptitude.letter"
+            android:label="@string/title_activity_letter"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Aptitude.calender"
+            android:label="@string/title_activity_calender"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Aptitude.antonyms"
+            android:label="@string/title_activity_antonyms"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Aptitude.age"
+            android:label="@string/title_activity_age"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Aptitude.AptitudeMainActivity"
+            android:label="@string/title_activity_aptitude_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Aptitude.Aptitude"
+            android:label="@string/title_activity_aptitude_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Login.Admin" />
+        <activity android:name=".Login.Original" />
+        <activity android:name=".Login.Others" />
+        <activity android:name=".Login.Register" />
+        <activity android:name=".Login.Staffs" />
+        <activity android:name=".Login.Students" />
+        <activity android:name=".Login.Verification" />
+        <activity android:name=".Attendance.addstudent" />
+        <activity android:name=".Attendance.addteacher" />
+        <activity android:name=".Attendance.admin_attendanceSheet" />
+        <activity android:name=".Attendance.adminlogin" />
+        <activity android:name=".Attendance.LoginActivity" />
+        <activity android:name=".Attendance.student_attendance_sheet" />
+        <activity android:name=".Attendance.studentlogin" />
+        <activity android:name=".Attendance.takeAttendance" />
+        <activity android:name=".Attendance.teacher_attendanceSheet" />
+        <activity android:name=".Attendance.teacherlogin" />
+        <activity android:name=".Login.SecondPageMainActivity" />
+        <activity android:name=".Aptitude.trains"/>
+        <activity android:name=".Aptitude.Arthmetic"/>
+        <activity android:name=".Aptitude.averages"/>
+        <activity android:name=".Aptitude.blood"/>
+        <activity android:name=".Aptitude.boats"/>
+        <activity android:name=".Aptitude.coding"/>
+        <activity android:name=".Aptitude.data"/>
+        <activity android:name=".Aptitude.idioms"/>
+        <activity android:name=".Aptitude.no"/>
+        <activity android:name=".Aptitude.logical"/>
+        <activity android:name=".Aptitude.number"/>
+        <activity android:name=".Aptitude.old"/>
+        <activity android:name=".Aptitude.ordering"/>
+        <activity android:name=".Aptitude.percentage"/>
+        <activity android:name=".Aptitude.permutation"/>
+        <activity android:name=".Aptitude.pipes"/>
+        <activity android:name=".Aptitude.probability"/>
+        <activity android:name=".Aptitude.profit"/>
+        <activity android:name=".Aptitude.ranking"/>
+        <activity android:name=".Aptitude.ratio"/>
+        <activity android:name=".Aptitude.seating"/>
+        <activity android:name=".Aptitude.selecting"/>
+        <activity android:name=".Aptitude.sentence"/>
+        <activity android:name=".Aptitude.series"/>
+        <activity android:name=".Aptitude.simple"/>
+        <activity android:name=".Aptitude.spellings"/>
+        <activity android:name=".Aptitude.spotting"/>
+        <activity android:name=".Aptitude.synonyms"/>
+        <activity android:name=".Aptitude.time"/>
+        <activity android:name=".Aptitude.veranalogy"/>
+        <activity android:name=".Aptitude.voice"/>
+        <activity android:name=".Aptitude.verbal"/>
+        <activity android:name=".Aptitude.analogy"/>
+
+        <activity android:name=".syllabus.Syllabus_CIV18.civpdfOpener718"
+            android:label="Semester 7/8" ></activity>
+        <activity android:name=".syllabus.Syllabus_CIV18.civsem718"
+            android:label="Semester 7/8" />
+        <activity android:name=".syllabus.Syllabus_CIV18.civpdfOpener518"
+            android:label="Semester 5/6" />
+        <activity android:name=".syllabus.Syllabus_CIV18.civsem518"
+            android:label="Semester 5/6" />
+        <activity android:name=".syllabus.Syllabus_CIV18.civpdfOpener318"
+            android:label="Semester 3/4" />
+        <activity android:name=".syllabus.Syllabus_CIV18.civsem318"
+            android:label="Semester 3/4" />
+        <activity android:name=".syllabus.Syllabus_CIV18.civpdfOpener118"
+            android:label="Chemistry cycle" />
+        <activity android:name=".syllabus.Syllabus_CIV18.civche18"
+            android:label="Chemistry cycle" />
+        <activity android:name=".syllabus.Syllabus_CIV18.civpdfOpener18"
+            android:label="Physics cycle" />
+        <activity android:name=".syllabus.Syllabus_CIV18.civphy18"
+            android:label="Physics cycle" />
+        <activity android:name=".syllabus.Syllabus_CIV18.civ_2018"
+
+
+            />
+        <activity android:name=".syllabus.Syllabus_CIV17.civpdfOpener717"
+            android:label="Semester 7/8" />
+        <activity android:name=".syllabus.Syllabus_CIV17.civsem717"
+            android:label="Semester 7/8"  />
+        <activity android:name=".syllabus.Syllabus_CIV17.civpdfOpener517"
+            android:label="Semester 5/6" />
+        <activity android:name=".syllabus.Syllabus_CIV17.civsem517"
+            android:label="Semester 5/6" />
+        <activity android:name=".syllabus.Syllabus_CIV17.civpdfOpener317"
+            android:label="Semester 3/4" />
+        <activity android:name=".syllabus.Syllabus_CIV17.civsem317"
+            android:label="Semester 3/4" />
+        <activity android:name=".syllabus.Syllabus_CIV17.civpdfOpener117"
+            android:label="Chemistry cycle" />
+        <activity android:name=".syllabus.Syllabus_CIV17.civche17"
+            android:label="Chemistry cycle" />
+        <activity android:name=".syllabus.Syllabus_CIV17.civpdfOpener17"
+            android:label="Physics cycle" />
+        <activity android:name=".syllabus.Syllabus_CIV17.civphy17"
+            android:label="Physics cycle" />
+        <activity android:name=".syllabus.Syllabus_CIV17.civ_2017" />
+        <activity
+            android:name=".syllabus.Syllabus_CIV.civpdfOpener7"
+            android:label="Semester 7/8" />
+        <activity
+            android:name=".syllabus.Syllabus_CIV.civsem7"
+            android:label="Semester 7/8" />
+        <activity
+            android:name=".syllabus.Syllabus_CIV.civpdfOpener5"
+            android:label="Semester 5/6" />
+        <activity
+            android:name=".syllabus.Syllabus_CIV.civsem5"
+            android:label="Semester 5/6" />
+        <activity
+            android:name=".syllabus.Syllabus_CIV.civpdfOpener3"
+            android:label="Semester 3/4" />
+        <activity
+            android:name=".syllabus.Syllabus_CIV.civsem3"
+            android:label="Semester 3/4" />
+        <activity
+            android:name=".syllabus.Syllabus_CIV.civpdfOpener1"
+            android:label="Chemistry cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_CIV.civche"
+            android:label="Chemistry cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_CIV.civpdfOpener"
+            android:label="Physics cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_CIV.civphy"
+            android:label="Physics cycle" />
+        <activity android:name=".syllabus.Syllabus_CIV.civ_2015" />
+        <activity android:name=".syllabus.Syllabus_CIV.CIVMainActivity" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC18.mecpdfOpener718"
+            android:label="Semester 7/8" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC18.mecsem718"
+            android:label="Semester 7/8" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC18.mecpdfOpener518"
+            android:label="Semester 5/6" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC18.mecsem518"
+            android:label="Semester 5/6" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC18.mecpdfopener318"
+            android:label="Semester 3/4" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC18.mecsem318"
+            android:label="Semester 3/4" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC18.mecpdfOpener118"
+            android:label="Chemistry cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC18.mecche18"
+            android:label="Chemistry cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC18.mecpdfOpener18"
+            android:label="Physics cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC18.mecphy18"
+            android:label="Physics cycle" />
+        <activity android:name=".syllabus.Syllabus_MEC18.mec_2018" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC17.mecpdfOpener717"
+            android:label="Semester 7/8" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC17.mecsem717"
+            android:label="Semester 7/8" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC17.mecpdfOpener517"
+            android:label="Semester 5/6" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC17.mecsem517"
+            android:label="Semester 5/6" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC17.mecpdfOpener317"
+            android:label="Semester 3/4" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC17.mecsem317"
+            android:label="Semester 3/4" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC17.mecpdfOpener117"
+            android:label="Chemistry cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC17.mecche17"
+            android:label="Chemistry cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC17.mecpdfOpener17"
+            android:label="Physics cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC17.mecphy17"
+            android:label="Physics cycle" />
+        <activity android:name=".syllabus.Syllabus_MEC17.Mec_2017" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC.mecpdfOpener7"
+            android:label="Semester 7/8" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC.mecsem7"
+            android:label="Semester 7/8" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC.mecpdfOpener5"
+            android:label="Semester 5/6" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC.mecsem5"
+            android:label="Semester 5/6" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC.mecpdfOpener3"
+            android:label="Semester 3/4" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC.mecsem3"
+            android:label="Semester 3/4" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC.mecpdfOpener1"
+            android:label="Chemistry cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC.mecche"
+            android:label="Cheimstry cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC.mecpdfOpener"
+            android:label="Physics cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_MEC.mecPhy"
+            android:label="Chemistry cycle" />
+        <activity android:name=".syllabus.Syllabus_MEC.mec_2015" />
+        <activity android:name=".syllabus.Syllabus_MEC.MECMainActivity" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE2017.ecepdfOpener317"
+            android:label="Semester 3/4" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE.ecepdfOpener5"
+            android:label="Semester 5/6" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE.ecesem5"
+            android:label="Semester 5/6" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE18.csechemistry18"
+            android:label="Chemistry cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE18.CsepdfOpener118"
+            android:label="Chemistry cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE18.CsepdfOpener718"
+            android:label="Semester 7/8" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE18.ecepdfOpener718"
+            android:label="Semester 7/8" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE18.ecepdfOpener518"
+            android:label="Semester 5/6" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE18.ecesem718"
+            android:label="Semester 7/8" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE18.ecesem518"
+            android:label="Semester 5/6" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE18.ecepdfOpener318"
+            android:label="Semester 3/4" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE18.ecesem318"
+            android:label="Semester 3/4" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE18.ecepdfOpener118"
+            android:label="Chemistry cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE18.eceche18"
+            android:label="Chemistry cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE18.ecepdfOpener18"
+            android:label="Physics cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE18.ecephy18"
+            android:label="Physics cycle" />
+        <activity android:name=".syllabus.Syllabus_ECE18.ece_2018" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE2017.ecepdfOpener717"
+            android:label="Semester 7/8" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE2017.ecesem717"
+            android:label="Semester 7/8" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE2017.ecepdfOpener517"
+            android:label="Semester 5/6" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE2017.ecesem517"
+            android:label="Semester 5/6" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE2017.ecesem317"
+            android:label="Semester 3/4" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE2017.ecepdfOpener117"
+            android:label="Chemistry cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE2017.eceche17"
+            android:label="Chemistry cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE2017.ecepdfopener17"
+            android:label="Physics cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE2017.ecephy17"
+            android:label="Physics cycle" />
+        <activity android:name=".syllabus.Syllabus_ECE2017.ece_2017" />
+        <activity android:name=".syllabus.Syllabus_ECE.ECEMainActivity" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE.ecepdfOpener7"
+            android:label="Semester 7/8" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE.ecesem7"
+            android:label="Semester 7/8" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE.ecepdfOpener3"
+            android:label="Semester 3/4" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE.ecesem3"
+            android:label="Semester 3/4" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE.ecepdfOpener1"
+            android:label="Chemistry cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE.eceche"
+            android:label="Chemistry cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE.ecePdfOpener"
+            android:label="Physics cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_ECE.ecephy"
+            android:label="Physics cycle" />
+        <activity android:name=".syllabus.Syllabus_ECE.ece_2015" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE18.csesem718"
+            android:label="Semester 7/8" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE18.CsepdfOpener518"
+            android:label="Semester 5/6" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE18.csesem518"
+            android:label="Semester 5/6" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE18.CsepdfOpener318"
+            android:label="Semester 3/4" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE18.csesem318"
+            android:label="Semester 3/4" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE17.CsepdfOpener717"
+            android:label="Semester 7/8" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE17.csesem717"
+            android:label="Semester 7/8" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE17.CsepdfOpener517"
+            android:label="Semester 5/6" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE17.csesem517"
+            android:label="Semester 5/6" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE17.CsepdfOpener317"
+            android:label="Semester 3/4" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE17.csesem317"
+            android:label="Semester 3/4" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE17.Csepdfopener117"
+            android:label="Chemistry cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE17.cseche17"
+            android:label="Chemistry cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE18.CsepdfOpener18"
+            android:label="Physics cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE18.csephy18"
+            android:label="Physics cycle" />
+        <activity android:name=".syllabus.Syllabus_CSE18.cse_2018" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE17.CsepdfOpener17"
+            android:label="Physics cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE17.csephy17"
+            android:label="Physics cycle" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE17.cse_2017"
+            android:label="Chemistry cycle" />
+        <activity android:name=".syllabus.Syllabus_CSE.cse_2015" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE.CSEMainActivity"
+            android:label="CSE/ISE" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE.cseChe"
+            android:label="chemistry cycle"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE.csePhy"
+            android:label="physics cycle"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".syllabus.SyllabusMain"/>
+        <activity android:name=".syllabus.CSEMainSyl"/>
+        <activity android:name=".syllabus.cse_2015"/>
+        <activity android:name=".syllabus.csePhy"/>
+        <activity android:name=".syllabus.CsePdfOpener"/>
+
+        <activity
+            android:name=".syllabus.Syllabus_CSE.CsePdfOpener"
+            android:label="Physics cycle"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE.csesem3"
+            android:label="Secound Year"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE.csesem5"
+            android:label="Third Year"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE.csesem7"
+            android:label="Fourth Year"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE.CsePdfOpener1"
+            android:label="Chemistry cycle"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE.CsepdfOpener3"
+            android:label="Semester 3/4"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE.CsepdfOpener5"
+            android:label="Semester 5/6"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".syllabus.Syllabus_CSE.CsepdfOpener7"
+            android:label="Semester 7/8"
+            android:theme="@style/AppTheme" />
+    </application>
+
+</manifest>

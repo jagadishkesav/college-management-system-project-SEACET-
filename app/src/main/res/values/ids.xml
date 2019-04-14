@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="empty_notes_view" type="id"></item>
+    <item name="notes_list" type="id"></item>
+</resources>

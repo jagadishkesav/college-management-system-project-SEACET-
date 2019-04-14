@@ -1,0 +1,129 @@
+<resources>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_attendance">Attendance</string>
+    <string name="title_activity_notes_main">Notes</string>
+    <string name="title_activity_aptitude_main">Aptitude</string>
+    <string name="title_activity_dictionary_main">Dictionary</string>
+    <string name="title_activity_sticky_notes_main">StickyNote</string>
+    <string name="title_activity_aptitude">Aptitude</string>
+    <string name="title_activity_age">age</string>
+    <string name="title_activity_antonyms">antonyms</string>
+    <string name="title_activity_calender">calender</string>
+    <string name="title_activity_letter">letter</string>
+    <string name="title_activity_logical">logical</string>
+    <string name="title_activity_series">series</string>
+    <string name="title_activity_trains">trains</string>
+    <string name="title_activity_verbal">verbal</string>
+
+
+    <string name="whats_in_your_mind">whats_in_your_mind</string>
+    <string name="no_notes">no_notes</string>
+    <string name="app_name">college</string>
+    <string name="title_activity_sticky_main">stickynote</string>
+    <string name="title_activity_addstudent">AddStudents</string>
+    <string name="title_activity_addteacher">AddTeachers</string>
+    <string name="title_activity_admin_attendance_sheet">AdminAttendanceSheetView</string>
+    <string name="title_activity_adminlogin">AdminLogin</string>
+    <string name="title_activity_student_attendance_sheet">StudentAttendanceSheet</string>
+    <string name="title_activity_studentlogin">StudentLogin</string>
+    <string name="title_activity_take_attendance">TakeAttendance</string>
+    <string name="title_activity_teacher_attendance_sheet">TeacherAttendanceSheet</string>
+    <string name="title_activity_teacherlogin">TeacherLogin</string>
+
+
+    <array name="classes">
+        <item>select Class</item>>
+        <item>1ST SEM</item>
+        <item>2ND SEM</item>
+        <item>3RD</item>
+        <item>4TH SEM</item>
+        <item>5TH SEM</item>
+        <item>6TH SEM</item>
+        <item>7TH SEM</item>
+        <item>8TH SEM</item>
+
+
+    </array>
+
+    <array name="department">
+        <item>select Department</item>
+        <item>CSE</item>
+        <item>ISE</item>
+        <item>ECE</item>
+        <item>MECH</item>
+        <item>Cv</item>
+    </array>
+    <array name="periods">
+        <item>p1</item>
+        <item>p2</item>
+        <item>p3</item>
+        <item>p4</item>
+        <item>p5</item>
+        <item>p6</item>
+        <item>p7</item>
+        <item>p8</item>
+
+    </array>
+    <string name="title_activity_external_tt">External_Time_Table</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_sgpaandcgpa">sgpaandcgpa</string>
+    <string name="title_activity_webview">webview</string>
+    <string name="title_activity_image_list">ImageListActivity</string>
+    <string name="title_activity_pdf_main">Notes|Question paper</string>
+    <string name="title_activity_main_sticky_note">MainActivityStickyNote</string>
+    <string name="attendance_view">Attendance View</string>
+
+    <array name="numbers">
+
+        <item>1st semester</item>
+        <item>2nd semester</item>
+        <item>3rd semester</item>
+        <item>4th semester</item>
+        <item>5th semester</item>
+        <item>6th semester</item>
+        <item>7th semester</item>
+        <item>8th semester</item>
+
+    </array>
+    <string name="user_login">User Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="new_user_register_here">New User? Register here</string>
+    <string name="title_activity_students">Students</string>
+    <string name="title_activity_admin">Admin</string>
+    <string name="title_activity_others">Others</string>
+    <string name="enter_your_email">Enter your Email</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="sign_in">Sign In</string>
+    <string name="not_have_an_account_click_here_to_signup">Not have an account? Click here to SignUp</string>
+    <string name="admin_login">Admin Login</string>
+    <string name="name">Name</string>
+    <string name="admin_id">Admin Id</string>
+
+    <string name="other_students_login">Other Students Login</string>
+    <string name="admin">admin</string>
+    <string name="staffs">Staffs</string>
+    <string name="students">Students</string>
+    <string name="others">others</string>
+    <string name="department">Department</string>
+
+    <string name="phonenumber">Phone number</string>
+    <string name="teacher_login">Teacher Login</string>
+
+    <string name="student_login">Student Login</string>
+    <string name="branch">Branch</string>
+
+    <string name="current_semester">Current Semester</string>
+
+    <string name="usn">USN</string>
+    <string name="phone_number">phone</string>
+    <string name="sign_up">signUp</string>
+    <string name="already_have_an_account_click_here_to_signin">a_h_a_a_c_h_t_s</string>
+
+</resources>

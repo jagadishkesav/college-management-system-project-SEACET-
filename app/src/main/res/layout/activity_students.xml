@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".Login.Students"
+    android:orientation="vertical">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/student_login"
+            android:textSize="30sp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <EditText
+            android:id="@+id/StudentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:autofillHints=""
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+           />
+
+        <EditText
+            android:id="@+id/StudentUsn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:autofillHints=""
+            android:hint="@string/usn"
+            android:inputType="textPersonName"
+            />
+
+        <EditText
+            android:id="@+id/StudentEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:autofillHints=""
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            />
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:autofillHints=""
+            android:hint="@string/password"
+            android:inputType="textPassword"
+           />
+
+        <EditText
+            android:id="@+id/StudentBranch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:autofillHints=""
+            android:hint="@string/branch"
+            android:inputType="textPersonName"
+          />
+
+        <EditText
+            android:id="@+id/StudentCurrentSem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:autofillHints=""
+            android:hint="@string/current_semester"
+            android:inputType="textPersonName"
+            />
+
+        <EditText
+            android:id="@+id/StudentPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:autofillHints=""
+            android:hint="@string/phone_number"
+            android:inputType="phone"
+            />
+
+        <Button
+            android:id="@+id/buttonSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:layout_margin="15dp"/>
+
+        <TextView
+            android:id="@+id/textViewSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have an Account? click here to Signin"
+            android:textAlignment="center"
+            android:textColor="#030303"
+            />
+</LinearLayout>
+    </ScrollView>

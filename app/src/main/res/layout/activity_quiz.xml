@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_quiz"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="Aptitude.AptitudeMainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/Aptitude"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00897B"
+                android:text="AGE"
+                android:textColor="#F3EEED"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp"
+            android:padding="8dp">
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="360dp"
+            android:layout_height="209dp"
+            android:layout_marginBottom="24dp"
+            android:padding="20dp"
+            android:textSize="20sp" />
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/choice1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="#FF4081"
+            android:padding="15dp"
+            android:textColor="#FFEDEDF5"
+            android:textSize="15sp" />
+
+
+    <Button
+        android:id="@+id/choice2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="#FDD835"
+        android:padding="15dp"
+        android:textColor="#FFF"
+        android:textSize="15sp" />
+
+        <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#CDDC39"
+        android:textColor="#FFF"
+        android:textSize="15sp"
+        android:padding="8dp"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/choice3"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FB8C00"
+            android:textColor="#FFF"
+            android:textSize="15sp"
+            android:padding="8dp"
+            android:layout_marginBottom="24dp"
+            android:id="@+id/choice4"/>
+
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="40dp">
+
+            <TextView
+                android:id="@+id/score_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="38dp"
+                android:text="Score"
+                android:textColor="#0A0303"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="1dp"
+                android:text="0"
+                android:textColor="#0A0303"
+                android:textSize="30sp" />
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</ScrollView>

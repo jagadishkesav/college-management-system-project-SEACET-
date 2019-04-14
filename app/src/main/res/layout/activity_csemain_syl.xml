@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".syllabus.CSEMainSyl">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/btnTechnical"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FB8C00"
+            android:text="CSE"
+            android:textAlignment="center"
+            android:textColor="#FFEDEDF5"
+            android:textSize="25dp"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btnCse2015"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:text="2015/16 CBCS SCHEME"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:textColor="#3949AB"
+            android:textSize="20sp"
+            android:textAllCaps="false"/>
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+
+        <Button
+            android:id="@+id/btnCse2017"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:gravity="center_vertical"
+            android:text="2017 CBSE SCHEME"
+            android:textAlignment="center"
+            android:textColor="#3949AB"
+            android:textSize="20sp"
+            android:textAllCaps="false"
+            />
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnCse2018"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:gravity="center_vertical"
+            android:text="2018 CBSE SCHEME"
+            android:textAlignment="center"
+            android:textColor="#3949AB"
+            android:textSize="20sp"
+            android:textAllCaps="false"/>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

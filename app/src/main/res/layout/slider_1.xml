@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DFD9D9"
+    android:gravity="center"
+   >
+
+    <ImageView
+        android:layout_marginTop="-150dp"
+        android:layout_width="500dp"
+        android:layout_height="319dp"
+        android:layout_gravity="center"
+
+        android:src="@drawable/chairperson" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Sri A.Krishnappa"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Founder,S.E.A.E.T. Ex-Minister,Government of Karnataka"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

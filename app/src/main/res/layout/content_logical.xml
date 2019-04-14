@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Aptitude.logical"
+    tools:showIn="@layout/app_bar_logical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/Logical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#43A047"
+            android:text="LOGICAL REASONING "
+            android:textAlignment="center"
+            android:textColor="#FFEDEDF5"
+            android:textSize="25sp"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btnSeries"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:text="NUMBER SERIES"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_counting"
+            android:textColor="#CA2925"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+
+        <Button
+            android:id="@+id/btnLetter"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_alphabets"
+            android:gravity="center_vertical"
+            android:text="LETTER AND SYMBOL SERIES "
+            android:textColor="#CA2925"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnAnalogy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_analogy"
+            android:gravity="center_vertical"
+            android:text="ANALOGY PAIR"
+            android:textColor="#CA2925"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnArthmetic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_arthmetic"
+            android:gravity="center_vertical"
+            android:text="Arithmetic signs"
+            android:textColor="#CA2925"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnBlood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_blood"
+            android:gravity="center_vertical"
+            android:text="BLOOD RELATIONS"
+            android:textColor="#CA2925"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnRanking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_ranking"
+            android:gravity="center_vertical"
+            android:text="RANKING"
+            android:textColor="#CA2925"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnCoding"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_engineer"
+            android:gravity="center_vertical"
+            android:text="CODING AND DECODING"
+            android:textColor="#CA2925"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnOld"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_boy"
+            android:gravity="center_vertical"
+            android:text="OLD MAN OUT"
+            android:textColor="#CA2925"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnSeating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_seating"
+            android:gravity="center_vertical"
+            android:text="SEATING ARRANGEMENT"
+            android:textColor="#CA2925"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_database"
+            android:gravity="center_vertical"
+            android:text="DATA SUFFICIENCY"
+            android:textColor="#CA2925"
+            android:textSize="20sp" />
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+
+
+
+

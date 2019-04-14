@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Aptitude.Aptitude"
+    tools:showIn="@layout/app_bar_aptitude">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/Aptitude"
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#D81B60"
+            android:text="APTITUDE "
+            android:textAlignment="center"
+            android:textColor="#FFEDEDF5"
+            android:textSize="25dp"
+            android:padding="10dp"/>
+
+        <Button
+            android:id="@+id/btnAge"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:text="Age"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_users"
+            android:textColor="#3949AB"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+
+        <Button
+            android:id="@+id/btnTrains"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_train"
+            android:gravity="center_vertical"
+            android:text="TRAINS"
+            android:textColor="#3949AB"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider6"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnCalender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_schedule"
+            android:gravity="center_vertical"
+            android:text="CALENDER"
+            android:textColor="#3949AB"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnAverages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_statistics"
+            android:gravity="center_vertical"
+            android:text="AVERAGES"
+            android:textColor="#3949AB"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnProbability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_dices"
+            android:gravity="center_vertical"
+            android:text="PROBABILITY"
+            android:textColor="#3949AB"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnPercentage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_percentage"
+            android:gravity="center_vertical"
+            android:text="PERCENTAGE"
+            android:textColor="#3949AB"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_time"
+            android:gravity="center_vertical"
+            android:text="TIME AND WORK"
+            android:textColor="#3949AB"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider7"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnProfit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_profit"
+            android:gravity="center_vertical"
+            android:text="PROFIT AND LOSS"
+            android:textColor="#3949AB"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider8"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_numbersys"
+            android:gravity="center_vertical"
+            android:text="NUMBER SYSTEM"
+            android:textColor="#3949AB"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider9"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnSimple"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_interest"
+            android:gravity="center_vertical"
+            android:text="SIMPLE INTEREST"
+            android:textColor="#3949AB"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider10"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnBoats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_boats"
+            android:gravity="center_vertical"
+            android:text="BOATS AND STREAMS"
+            android:textColor="#3949AB"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider11"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnPipes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_pipes"
+            android:gravity="center_vertical"
+            android:text="PIPES AND CISTERNS"
+            android:textColor="#3949AB"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider12"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+
+        <Button
+            android:id="@+id/btnRatio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_ratio"
+            android:gravity="center_vertical"
+            android:text="RATION AND PROPORTION"
+            android:textColor="#3949AB"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider15"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+
+        <Button
+            android:id="@+id/btnNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_num"
+            android:gravity="center_vertical"
+            android:text="PROMBLEM ON NUMBERS"
+            android:textColor="#3949AB"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider16"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <Button
+            android:id="@+id/btnPermutation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:background="#FFF"
+            android:drawableLeft="@drawable/ic_permutation"
+            android:gravity="center_vertical"
+            android:text="PERMUTATION AND COMBINATION"
+            android:textColor="#3949AB"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/divider17"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
+

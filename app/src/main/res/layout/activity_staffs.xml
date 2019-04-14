@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login.Staffs"
+    android:background="#fff"
+    android:orientation="vertical">
+
+
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
+            android:text="@string/teacher_login"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="176dp"
+            tools:layout_editor_absoluteY="54dp"
+            android:layout_marginStart="110dp" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            />
+        <EditText
+            android:id="@+id/editTextDepartment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="@string/department"
+            android:inputType="textPersonName"
+           />
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+           />
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            />
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="@string/phonenumber"
+            android:inputType="phone"
+           />
+
+        <Button
+            android:id="@+id/buttonSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="@string/sign_up" />
+
+
+        <TextView
+            android:id="@+id/textViewSignIn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already have an Account? click here to login"
+            android:textAlignment="center"
+            android:textColor="#000" />
+
+
+    </LinearLayout>
+
