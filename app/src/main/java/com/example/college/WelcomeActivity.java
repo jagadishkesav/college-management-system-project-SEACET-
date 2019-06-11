@@ -31,7 +31,7 @@ public class WelcomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
+        setContentView(R.layout.activity_welcome);
         if(!isFirstTimeStartApp()) {
             startMainActivity();
             finish();
@@ -39,7 +39,7 @@ public class WelcomeActivity extends AppCompatActivity {
 
         setStatusBarTransparent();
 
-        setContentView(R.layout.activity_welcome);
+
 
         viewPager = findViewById(R.id.view_pager);
         layoutDot = findViewById(R.id.dotLayout);

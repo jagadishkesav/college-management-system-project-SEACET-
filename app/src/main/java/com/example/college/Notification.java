@@ -2,6 +2,8 @@ package com.example.college;
 
 import android.os.AsyncTask;
 import android.os.StrictMode;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -42,6 +44,14 @@ public class Notification extends AppCompatActivity {
         webView.setWebViewClient(new WebViewClient());
 
     }
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById( R.id.drawer_layout );
+
+        super.onBackPressed();
+
+    }
+
 }
 
        

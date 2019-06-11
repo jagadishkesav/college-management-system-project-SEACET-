@@ -3,6 +3,8 @@ package com.example.college.Login;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
@@ -20,6 +22,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.ProviderQueryResult;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -71,6 +74,7 @@ public class Students extends AppCompatActivity {
                  mFirestone.collection("Students").add(userMap).addOnSuccessListener( new OnSuccessListener<DocumentReference>() {
                      @Override
                      public void onSuccess(DocumentReference documentReference) {
+
                          Toast.makeText(Students.this,"Student data recorded",Toast.LENGTH_SHORT ).show();
                      }
                  } ).addOnFailureListener( new OnFailureListener() {
@@ -83,6 +87,24 @@ public class Students extends AppCompatActivity {
 
                  String sEmail = StudentEmail.getText().toString();
                  String sPassword = editTextPassword.getText().toString();
+                 mAuth.fetchProvidersForEmail(Email)
+                 .addOnCompleteListener(new OnCompleteListener<ProviderQueryResult>() {
+                     @Override
+                     public void onComplete(@NonNull Task<ProviderQueryResult> task) {
+                         boolean check = !task.getResult().getProviders().isEmpty();
+                         if(!check)
+                         {
+                             Toast.makeText(Students.this,"Email is not Found",Toast.LENGTH_SHORT).show();
+                         }
+                         else
+                         {
+                             Toast.makeText(Students.this,"Email is already exist....",Toast.LENGTH_SHORT).show();
+
+                         }
+
+                     }
+                 });
+
                  if(!TextUtils.isEmpty(sEmail) && !TextUtils.isEmpty(sPassword) && ((sPassword.length() >=10)))
                  {
                      mAuth.createUserWithEmailAndPassword(sEmail,sPassword).addOnCompleteListener( Students.this, new OnCompleteListener<AuthResult>() {
@@ -130,7 +152,7 @@ public void sendEmailVerification()
                     public void onComplete(@NonNull Task<Void> task) {
                         if(task.isSuccessful())
                         {
-                            Toast.makeText(Students.this,"Student Registration is success,Please Check Your Email to Verify Your Gmail",Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Students.this,"Student Registration is success,Please Check Your Email to Verify Your Email",Toast.LENGTH_SHORT).show();
                             finish();
                             startActivity(new Intent(Students.this,SecondPageMainActivity.class));
                         } else {
@@ -140,5 +162,15 @@ public void sendEmailVerification()
                 });
     }
 }
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById( R.id.drawer_layout );
+        if (drawer.isDrawerOpen( GravityCompat.START )) {
+            drawer.closeDrawer( GravityCompat.START );
+        } else {
+            super.onBackPressed();
+        }
+    }
+
 
 }

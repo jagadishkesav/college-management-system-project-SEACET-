@@ -159,16 +159,9 @@ public class LoginActivity extends AppCompatActivity implements AdapterView.OnIt
     }
     @Override
     public void onBackPressed() {
-         if (back_pressed + 2000 > System.currentTimeMillis()){
+
             super.onBackPressed();
-            finish();
-            ActivityCompat.finishAffinity(this);
-            System.exit(0);
-        }
-        else {
-            Toast.makeText(getBaseContext(), "Press once again to exit", Toast.LENGTH_SHORT).show();
-            back_pressed = System.currentTimeMillis();
-        }
+
     }
 
 

@@ -1,11 +1,13 @@
 package com.example.college;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -118,11 +120,30 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public void onBackPressed() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setMessage("Are you sure you want to Exit?")
+                .setCancelable(false)
+                .setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        MainActivity.super.onBackPressed();
+                    }
+                })
+                .setNegativeButton("No", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+        AlertDialog alertDialog = builder.create();
+        alertDialog.setTitle("Exit Alert!!!!");
+        alertDialog.show();
+
         DrawerLayout drawer = (DrawerLayout) findViewById( R.id.drawer_layout );
         if (drawer.isDrawerOpen( GravityCompat.START )) {
             drawer.closeDrawer( GravityCompat.START );
         } else {
-            super.onBackPressed();
+
         }
     }
 
@@ -157,28 +178,29 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (id)
         {
             case R.id.nav_attendance:
-                Intent a = new Intent( MainActivity.this, AttendanceMainActivity.class );
+                Intent a = new Intent( MainActivity.this, AttendanceLoginActivity.class );
                 startActivity( a );
                 break;
             case R.id.nav_notifications:
-                Intent n = new Intent( MainActivity.this,Notification.class );
+                Intent n = new Intent( MainActivity.this,NotificationLoginActivity.class );
                 startActivity( n );
                 break;
 
             case R.id.nav_assignment:
-                Intent intent = new Intent(getApplicationContext(), note.class );
-                finish();
+                Intent intent = new Intent(getApplicationContext(), noteLoginActivity.class );
                 startActivity( intent );
                 break;
             case R.id.navFeedback:
                 Intent feed = new Intent(getApplicationContext(), FeedbackMain.class );
-                finish();
                 startActivity( feed );
                 break;
             case R.id.nav_about:
                 Intent about = new Intent(getApplicationContext(), AboutOurCollegeMain.class );
-                finish();
                 startActivity( about );
+                break;
+            case R.id.nav_share:
+                Intent share = new Intent(getApplicationContext(), share.class );
+                startActivity( share );
                 break;
         }
 

@@ -3,6 +3,8 @@ package com.example.college.Login;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
@@ -41,7 +43,7 @@ public class Admin extends AppCompatActivity {
         editTextPassword = (EditText) findViewById(R.id.editTextPassword);
         editTextEmail = (EditText) findViewById(R.id.editTextEmail);
         editTextPhone  = (EditText) findViewById(R.id.editTextPhone);
-        buttonSignUp = (Button) findViewById(R.id.buttonSignUp);
+        buttonSignUp = (Button) findViewById(R.id.buttonSignIn);
         textViewSingIn = (TextView) findViewById(R.id.textViewSignIn);
 
         mAuth = FirebaseAuth.getInstance();
@@ -123,7 +125,7 @@ public class Admin extends AppCompatActivity {
                         public void onComplete(@NonNull Task<Void> task) {
                             if(task.isSuccessful())
                             {
-                                Toast.makeText(Admin.this,"Student Registration is success,Please Check Your Email to Verify Your Gmail",Toast.LENGTH_SHORT).show();
+                                Toast.makeText(Admin.this,"Please Check Your Email to Verify Your Email",Toast.LENGTH_SHORT).show();
                                 finish();
                                 startActivity(new Intent(Admin.this,SecondPageMainActivity.class));
                             } else {
@@ -131,6 +133,15 @@ public class Admin extends AppCompatActivity {
                             }
                         }
                     });
+        }
+    }
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById( R.id.drawer_layout );
+        if (drawer.isDrawerOpen( GravityCompat.START )) {
+            drawer.closeDrawer( GravityCompat.START );
+        } else {
+            super.onBackPressed();
         }
     }
 

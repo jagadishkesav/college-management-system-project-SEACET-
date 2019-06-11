@@ -104,4 +104,5 @@ public class External_tt extends AppCompatActivity implements NavigationView.OnN
         drawer.closeDrawer( GravityCompat.START );
         return true;
     }
+
 }

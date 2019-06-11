@@ -102,4 +102,5 @@ public class sgpaandcgpa extends AppCompatActivity implements NavigationView.OnN
         drawer.closeDrawer( GravityCompat.START );
         return true;
     }
+
 }

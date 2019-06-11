@@ -196,4 +196,5 @@ public class DictionaryMainActivity extends AppCompatActivity implements Navigat
         drawer.closeDrawer( GravityCompat.START );
         return true;
     }
+
 }

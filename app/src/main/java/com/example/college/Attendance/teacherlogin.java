@@ -12,7 +12,10 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.college.MainActivity;
 import com.example.college.R;
+
+import org.apache.log4j.chainsaw.Main;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -85,22 +88,15 @@ public class teacherlogin extends AppCompatActivity implements AdapterView.OnIte
 
 
     public void logoutTeacher(View view) {
-        Intent logoutTeacher=new Intent(teacherlogin.this,LoginActivity.class);
+        Intent logoutTeacher=new Intent(teacherlogin.this, MainActivity.class);
         logoutTeacher.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(logoutTeacher);
     }
 
     @Override
     public void onBackPressed() {
-        if (back_pressed + 2000 > System.currentTimeMillis()){
+
             super.onBackPressed();
-            finish();
-            ActivityCompat.finishAffinity(this);
-            System.exit(0);
-        }
-        else {
-            Toast.makeText(getBaseContext(), "Press once again to exit", Toast.LENGTH_SHORT).show();
-            back_pressed = System.currentTimeMillis();
-        }
+
     }
 }

@@ -3,6 +3,7 @@ package com.example.college.StickyNotes;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
@@ -79,6 +80,13 @@ public class EditNoteActivity extends AppCompatActivity {
 
             finish(); // return to the MainActivity
         }
+
+    }
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById( R.id.drawer_layout );
+
+        super.onBackPressed();
 
     }
 }

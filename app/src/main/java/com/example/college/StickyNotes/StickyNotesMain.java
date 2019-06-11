@@ -8,6 +8,8 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -314,6 +316,14 @@ public class StickyNotesMain extends AppCompatActivity implements NoteEventListe
         Toast.makeText(this, "" + position, Toast.LENGTH_SHORT).show();
         return false;
     }
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById( R.id.drawer_layout );
+
+        super.onBackPressed();
+
+    }
+
 }
 
 
